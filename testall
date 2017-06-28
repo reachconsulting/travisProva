@@ -1,6 +1,7 @@
 #!/bin/bash
 BASE=`pwd`
-PYTHONPATH="$BASE:$BASE/test:$BASE/doc:$BASE/scripts"
+export PYTHONPATH="$BASE:$BASE/test:$BASE/doc:$BASE/scripts"
+echo $PYTHONPATH
 cd $BASE/test && python -m unittest unit_test 
 m_exit=$?
 cd -
