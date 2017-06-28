@@ -1,0 +1,7 @@
+#!/bin/bash
+BASE="/home/alex2001/repos/reachplayground/travisProva"
+PYTHONPATH="$BASE:$BASE/test:$BASE/doc:$BASE/scripts"
+cd $BASE/test && python -m unittest unit_test 
+m_exit=$?
+cd -
+exit $m_exit
