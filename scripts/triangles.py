@@ -46,7 +46,9 @@ class Triangle:
         return (self.a + self.b > self.c) and (self.a +self.c > self.b) and (self.c +self.b > self.a)
 
     def isEquilateral(self):
-        return (self.a == self.b) and (self.b == self.c) and (self.c == self.a)
+        #return (self.a == self.b) and (self.b == self.c) and (self.c == self.a)
+        avg = (self.a + self.b + self.c) / 3
+        return (self.a == avg)
     
 
 
