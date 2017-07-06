@@ -47,10 +47,10 @@ class Triangle:
 
     def isEquilateral(self):
         #Correct
-        #return (self.a == self.b) and (self.b == self.c) and (self.c == self.a)
+        return (self.a == self.b) and (self.b == self.c) and (self.c == self.a)
         # EPIC FAIL
-        avg = (self.a + self.b + self.c) / 3
-        return (self.a == avg)
+        #avg = (self.a + self.b + self.c) / 3
+        #return (self.a == avg)
     
 
 
